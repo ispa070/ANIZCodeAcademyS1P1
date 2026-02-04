@@ -7,7 +7,6 @@ public class WriteToNewLine02 {
         String navn = "Sofie";
         int alder = 20;
 
-        System.out.println("Hej " + navn + "! Du er " + alder + " år gammel.");
-        System.out.println("Velkommen til Java 🚀");
+        System.out.println("Hej " + navn + "! Du er " + alder + " år gammel. " + "Velkommen til Java 🚀");
     }
 }
