@@ -1,6 +1,5 @@
 package Lesson04.Costructor.Triangle;
 
-
 public class Triangle {
     // attributes (fields)
     double sideA;
