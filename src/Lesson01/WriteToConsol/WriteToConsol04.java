@@ -6,10 +6,10 @@ public class WriteToConsol04 {
 
         System.out.println(Message04());
     }
-    // Hops! This method is returning a String value.
+    // This method is returning a String value.
     public static String Message04() {
         String text = "I forgot my lunch box! Ver04";
-        // Hops! This method is returning a String value.
+        // This method is returning a String value.
         return text;
     }
 }

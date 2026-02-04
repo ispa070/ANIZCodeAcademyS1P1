@@ -5,12 +5,13 @@ public class Person {
     String firstName;
     String lastName;
     String middleName;
+    String nationality;
     int age;
 
     public void WritePersonInfo()
     {
         // Udskriver oplysninger
         System.out.println("Navn: " + firstName + " " + middleName + " " + lastName);
-        System.out.println("Alder: " + age);
+        System.out.println("Alder: " + age + ", Fra: " + nationality );
     }
 }
