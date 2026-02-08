@@ -8,11 +8,14 @@ public class SheepCounter {
     }
 
     public void countSheep() {
-        int i = 1;
-        while (i <= sheep) {
-            System.out.println("Sheep number " + i + " 🐑");
-            i++;
+        int i = sheep;
+        while (i >= 0) {
+            i--; // Den tæller alle tal så vi kan filtrere på logisk vis vha. modulus (i % 2 == 0)
+            if (i % 2 == 0) {
+                System.out.println("Sheep number " + i + " 🐑");
+            }
         }
+
         System.out.println("You fall asleep... 😴");
     }
 }
