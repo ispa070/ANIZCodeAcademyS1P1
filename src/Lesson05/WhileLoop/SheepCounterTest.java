@@ -6,13 +6,10 @@ public class SheepCounterTest {
 
         System.out.println("How many sheep would you like to count down from?");
         Scanner scanner = new Scanner(System.in);
-        int maxInput = scanner.nextInt();
+        int maxInput = scanner.nextInt(); //Input fra bruger
 
         SheepCounter counter = new SheepCounter(maxInput);
         counter.countSheep();
-
-
-
 
 }
 
