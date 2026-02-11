@@ -20,23 +20,44 @@ public class MushroomBasket {
 
         System.out.println();
 
-        // Demonstrer equals()
-        Mushroom checkMushroom = new Mushroom("Champignon", "Hvid");
-        if (basket[0].equals(checkMushroom)) {
-            System.out.println("The third mushroom matches Portobello (Brun)! ");
-        } else {
-            System.out.println("The third mushroom does not match.");
+        // Søge funktion i basket()
+        Mushroom checkMushroom = new Mushroom("Østershat", "Grå");
+        boolean found = false;
+
+        for (Mushroom m : basket) {
+            if (m.equals(checkMushroom)) {
+                found = true;
+                break;
+            }
         }
 
-        // Eksempel på ikke-match
-        Mushroom wrongMushroom = new Mushroom("Champignon", "Brun");
-        if (basket[1].equals(wrongMushroom)) {
-            System.out.println("Match!");
+        if (found) {
+            System.out.println("There's a " + checkMushroom + " in your basket.");
         } else {
-            System.out.println("The third mushroom does not match Champignon (Brun). ");
+            System.out.println("There's no " + checkMushroom + " in your basket.");
         }
-    }
+        int colorCount = 0;
+        String mushroomColor = "";
+        for(Mushroom m : basket) {
+            if (m.getColor().equals("Brun")) {
+                colorCount++;
+                mushroomColor = m.getColor();
+            }
+        }
+        System.out.println("There are " + colorCount + " instance(s) of Mushrooms of the color (" + mushroomColor + ") in your basket.");
+        }
+
 }
+
+            /* Eksempel på ikke-match
+            Mushroom wrongMushroom = new Mushroom("Champignon", "Brun");
+            if (basket[1].equals(wrongMushroom)) {
+                System.out.println("Match!");
+            } else {
+                System.out.println("The third mushroom does not match Champignon (Brun). "); */
+
+
+
 
 
 
