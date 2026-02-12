@@ -6,11 +6,13 @@ public class FlowerShopMain {
 
     public static void main(String[] args) {
 
+        Flower items = new Flower();//du stoppede her
+
         //flower array
         Flower[] flowerItem = new Flower[3];
-            flowerItem[0] = new Flower("Roser", "Røde", 79.99);
-            flowerItem[1] = new Flower("Tulipaner", "Gule", 29.99);
-            flowerItem[2] = new Flower("Liljer", "Hvide", 59.99);
+        flowerItem[0] = new Flower("Roser", "Røde", 79.99);
+        flowerItem[1] = new Flower("Tulipaner", "Gule", 29.99);
+        flowerItem[2] = new Flower("Liljer", "Hvide", 59.99);
 
         //print alle flowerItem fra Flower[]
         for (int i = 0; i < flowerItem.length; i++) {
@@ -27,5 +29,7 @@ public class FlowerShopMain {
             System.out.println(item);
         }
 
+        displayItemCategory();
+        System.out.println();
     }
 }
