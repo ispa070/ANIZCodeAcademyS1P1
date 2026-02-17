@@ -2,7 +2,7 @@ package Lesson07.Array.MiniPojects.Flower;
 
 import java.util.Arrays;
 
-public class FlowerShopMain {
+/*public class FlowerShopMain {
 
     public static void main(String[] args) {
 
@@ -40,3 +40,5 @@ public class FlowerShopMain {
         }
     }
 }
+
+ */

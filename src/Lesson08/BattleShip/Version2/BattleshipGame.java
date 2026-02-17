@@ -10,15 +10,15 @@ public class BattleshipGame {
 
         // Placer skibet (3 felter langt) et sted på linjen 0–6
         int start = random.nextInt(5); // sikrer at skibet passer ind
-        int[] shipLocation = { start, start + 1, start + 2 };
+        int[] shipLocation = { start, start + 1, start + 2 }; //Det sikrer, at de tre tilfældigt genererede tal ligger i forlængelse af hinanden
         enemyShip.setLocation(shipLocation);
 
         System.out.println("=== Welcome, Captain! ===");
         System.out.println("Enemy ship is hiding on positions 0–6.");
         System.out.println("Sink it by hitting all 3 cells!");
 
-        int numGuesses = 0;
-        boolean isAlive = true;
+        int numGuesses = 0; //det er en tælle funktion, der kan sige det totale antal gæt
+        boolean isAlive = true; //det er ligesom starten på
 
         // Spil-loop
         while (isAlive) {
