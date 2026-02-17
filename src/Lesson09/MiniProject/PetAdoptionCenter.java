@@ -92,12 +92,30 @@ public class PetAdoptionCenter {
             } else if (type.equalsIgnoreCase("lizard")) {
                 pets[i] = new Lizard(name);
             } else if (type.equalsIgnoreCase("bird")) {
-                pets[i] = new Bird(name);
-            } else {
+                double wingSpan = 0;
+                while (true) {
+                    System.out.println("Register the wingspan of the bird (in cm): ");
+                    if (sc.hasNextDouble()) {
+                        wingSpan = sc.nextDouble();
+                        sc.nextLine();
+                        if (wingSpan > 0) {
+                            break;
+                        } else {
+                            System.out.println("Wingspan must be a positive number. ");
+                            System.out.println("Please enter a valid number");
+                            sc.nextLine();
+                        }
+                    }
+
+                }
+                pets[i] = new Bird(name, wingSpan);
+            }
+            else {
                 System.out.println("Unknown type, saving as generic pet.");
                 pets[i] = new Pet(name);
             }
         }
+
 
         return pets;
     }
