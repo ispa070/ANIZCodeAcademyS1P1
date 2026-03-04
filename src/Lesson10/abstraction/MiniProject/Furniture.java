@@ -1,25 +1,20 @@
 package Lesson10.abstraction.MiniProject;
 
-/*
- * Abstract superclass Furniture
- * Demonstrates abstraction and encapsulation.
- */
-abstract class Furniture {
+public abstract class Furniture {
 
-    // Private attributes (encapsulation)
+    //Furniture attributes
     private String name;
     private double price;
     private String material;
 
-
-    // Constructor
+    //Furniture constructor
     public Furniture(String name, double price, String material) {
         this.name = name;
         this.price = price;
         this.material = material;
     }
 
-    // Getters
+    // Getter
     public String getName() {
         return name;
     }
@@ -32,7 +27,7 @@ abstract class Furniture {
         return material;
     }
 
-    // Setters
+    // Setter
     public void setName(String name) {
         this.name = name;
     }
@@ -45,16 +40,16 @@ abstract class Furniture {
         this.material = material;
     }
 
-    // Abstract methods (must be implemented in subclasses)
-    public abstract String getDescription();
+    //getDescription-metode (abstract)
+    public abstract void getDescription();
 
-    public abstract double calculateShippingCost();
+    //calculateShippingCost-metode (abstract)
+    //public abstract double calculateShippingCost();
 
-    // toString method
+    //toString method
     @Override
     public String toString() {
-        return "Name: " + name +
-                ", Price: " + price +
-                ", Material: " + material;
+        return "Furniture type: " + name + " | Price: " + price + " | Type of material: " + material;
     }
+
 }

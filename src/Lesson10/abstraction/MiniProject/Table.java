@@ -1,6 +1,6 @@
 package Lesson10.abstraction.MiniProject;
 
-class Table extends Furniture {
+/*class Table extends Furniture {
 
     private int numberOfLegs;
 
@@ -26,3 +26,4 @@ class Table extends Furniture {
                 ", Legs: " + numberOfLegs;
     }
 }
+*/

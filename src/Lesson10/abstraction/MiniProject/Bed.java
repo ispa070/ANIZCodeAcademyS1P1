@@ -1,6 +1,6 @@
 package Lesson10.abstraction.MiniProject;
 
-class Bed extends Furniture {
+/*class Bed extends Furniture {
 
     private String size;
 
@@ -26,3 +26,4 @@ class Bed extends Furniture {
                 ", Size: " + size;
     }
 }
+*/
