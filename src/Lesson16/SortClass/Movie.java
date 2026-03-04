@@ -3,13 +3,19 @@ package Lesson16.SortClass;
 public class Movie implements Comparable<Movie> {
 
     private String title;
+    private String director;
 
-    public Movie(String title) {
+    public Movie(String title, String director) {
         this.title = title;
+        this.director = director;
     }
 
     public String getTitle() {
         return title;
+    }
+
+    public String getDirector() {
+        return director;
     }
 
     @Override
@@ -19,6 +25,7 @@ public class Movie implements Comparable<Movie> {
 
     @Override
     public String toString() {
-        return title;
+        return "'" + title + "' by " + director;
+
     }
 }

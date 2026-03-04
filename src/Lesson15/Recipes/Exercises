@@ -11,23 +11,23 @@ You must refactor the code so it uses:
 2. 35 Questions
 
  SECTION A – Architecture & Packages
-   Why is the program divided into packages (e.g., model, service, ui)?
-   What is the responsibility of the model package?
-   What is the responsibility of the service package?
-   Why should the UI not handle file reading directly?
-   What problem occurs if all classes are placed in one package?
-   What is separation of concerns?
-   What is the benefit of splitting UI and business logic?
-   Why is RecipeFileHandler placed in service instead of model?
+   Why is the program divided into packages (e.g., model, service, ui)? Svar: Det er for at holde og orden adskilt, også ift. encapsulation (public, private, protected etc.)
+   What is the responsibility of the model package? Svar: Definerer ingredienserne og enheder, hvilken type og hvile attributter de skal have.
+   What is the responsibility of the service package? Svar: Filskrivning
+   Why should the UI not handle file reading directly? Svar: Det er lettere at vedligeholde og én klasse, ét formål
+   What problem occurs if all classes are placed in one package? Svar: Udfordringen bliver at organisere og vedligeholde det. Fejl bliver svære at rette og encapsulation bliver overflødigt.
+   What is separation of concerns? Svar: Hver del af programmet bør have én klart defineret opgave
+   What is the benefit of splitting UI and business logic? Svar: Vedligeholdelse? Klar seperation of concerns. UI tager input. Service-package håndterer HVORDAN data bliver behandlet
+   Why is RecipeFileHandler placed in service instead of model? Svar: Den håndterer hvad der skal ske med de data, der bliver indtastet og model-package definerer "rammerne" for hvad en ingrediens kan være
 
  SECTION B – Encapsulation
 
-   What is encapsulation?
-   Why are fields usually declared private?
-   What is the purpose of getters and setters?
-   What could happen if we made all fields public?
-   How does encapsulation improve maintainability?
-   Can we validate data inside setters? Why is that useful?
+   What is encapsulation? Svar: Synlighed/visibilitet, hvem kan ændre hvilke attributter og kalde hvilke metoder
+   Why are fields usually declared private? Svar: Så er det kun den klasse, hvor de fields er i, der kan tilgå dem
+   What is the purpose of getters and setters? Svar: Så andre klasser kan tilgå de fields
+   What could happen if we made all fields public? Svar: Kaos og rod, alt kan ændres hele tiden
+   How does encapsulation improve maintainability? Svar: Færre domino-effekter
+   Can we validate data inside setters? Why is that useful? Svar: Jamen, så er man sikker på, at de øvrige metoder fungerer korrekt
 
   SECTION C – Inheritance & Abstraction
 
