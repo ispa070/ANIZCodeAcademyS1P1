@@ -1,28 +1,21 @@
 package Lesson10.abstraction.MiniProject;
 
-class Chair extends Furniture {
+public abstract class Chair extends Furniture {
 
-    private boolean hasArmRest;
-
-    public Chair(String name, double price, String material, boolean hasArmRest) {
+    public Chair(String name, double price, String material) {
         super(name, price, material);
-        this.hasArmRest = hasArmRest;
+    }
+
+    public void setDescription() {
+        System.out.println("Description: Super comfortable and elegant timeless design at an affordable price.");
+    }
+
+    public void getDescription() {
+        setDescription();
     }
 
 
-    @Override
-    public String getDescription() {
-        return "Chair with armrest: " + hasArmRest;
-    }
-
-    @Override
-    public double calculateShippingCost() {
-        return getPrice() * 0.05;
-    }
-
-    @Override
     public String toString() {
-        return "Chair -> " + super.toString() +
-                ", Armrest: " + hasArmRest;
+        return super.toString();
     }
 }

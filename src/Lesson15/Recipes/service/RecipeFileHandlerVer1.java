@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class RecipeFileHandlerVer1 {
 
-    private static final String FILE_PATH = "src\\Lesson15\\Recipes\\recipes.txt";
+    private static final String FILE_PATH = "src/Lesson15/Recipes/recipes.txt";
 
     public ArrayList<String> getRecipeNames() {
 

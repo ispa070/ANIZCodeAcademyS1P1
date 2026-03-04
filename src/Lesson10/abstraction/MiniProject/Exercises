@@ -6,6 +6,7 @@ You must build a small furniture management system. I have made a FurnitureTest 
 
 🧪 Step 1 – REMOVE */ FROM FurnitureTest Class
 Draw a class and flow diagram of the main method.
+DONE
 
 🧱 Step 2 – Create an Abstract Class: Furniture
 Create an abstract class called Furniture
@@ -13,15 +14,18 @@ Add private attributes:
 String name
 double price
 String material
+DONE
 
 Add:
 Constructor
 Getters and setters
 toString() method
+DONE
 
 Add TWO abstract methods:
 public abstract String getDescription();
 public abstract double calculateShippingCost();
+DONE
 
 🧱 Step 3 – Create Subclasses
 Create at least these classes:

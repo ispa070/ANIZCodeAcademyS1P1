@@ -1,6 +1,6 @@
 package Lesson10.abstraction.MiniProject;
 
-class Sofa extends Furniture {
+/*class Sofa extends Furniture {
 
     private int seats;
 
@@ -26,3 +26,4 @@ class Sofa extends Furniture {
                 ", Seats: " + seats;
     }
 }
+*/
