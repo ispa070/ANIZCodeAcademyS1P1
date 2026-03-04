@@ -9,10 +9,10 @@ public class SortMovies {
 
         ArrayList<Movie> movies = new ArrayList<>();
 
-        movies.add(new Movie("Inception"));
-        movies.add(new Movie("Avatar"));
-        movies.add(new Movie("The Matrix"));
-        movies.add(new Movie("Interstellar"));
+        movies.add(new Movie("Inception", "Christopher Nolan"));
+        movies.add(new Movie("Avatar", "James Cameron"));
+        movies.add(new Movie("The Matrix", "Lana & Lily Wachowski"));
+        movies.add(new Movie("Interstellar", "Christopher Nolan"));
 
         System.out.println("Before sorting:");
         System.out.println(movies);
